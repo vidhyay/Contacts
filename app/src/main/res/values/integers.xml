@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="radioWeight">1</integer>
+    <integer name="labelWeight">65</integer>
+    <integer name="inputWeight">1</integer>
+</resources>

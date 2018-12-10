@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorbackground"
+    android:layout_marginHorizontal="@dimen/horizontal_margin"
+    tools:context=".AddressDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/marginBottom">
+            <Spinner
+                android:id="@+id/designationID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/inputWeight"
+                android:entries="@array/designationlist">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/marginBottom">
+            <EditText
+                android:id="@+id/firstNameID"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/inputWeight"
+                android:hint="@string/first_name" />
+            <EditText
+                android:id="@+id/lastNameID"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/inputWeight"
+                android:hint="@string/last_name" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/addressID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:hint="@string/address"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/marginBottom">
+            <Spinner
+                android:id="@+id/provinceID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/inputWeight"
+                android:entries="@array/provincelist">
+            </Spinner>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/countryID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:hint="@string/country"/>
+        <EditText
+            android:id="@+id/postalcodeID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:hint="@string/postalcode"/>
+        <Button
+            android:id="@+id/submitID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
